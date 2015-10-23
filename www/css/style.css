@@ -1,0 +1,250 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	nav ul>li {
+		margin:0.6%;
+		width:48.5%;
+		height:120px;
+		font-size:15px;
+	}
+	.big {
+		font-size:35px;
+	}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+	nav ul>li {
+		margin:0.6%;
+		width:48.5%;
+		height:120px;
+		font-size:20px;
+	}
+	.big {
+		font-size:70px;
+	}
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+	nav ul {
+		margin:30px;
+	}
+	nav ul>li {
+		margin:0.6%;
+		width:40.5%;
+		height:120px;
+		font-size:15px;
+	}
+	.big {
+		font-size:35px;
+	}
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+	nav ul>li {
+		margin:1%;
+		width:30.5%;
+		height:120px;
+		font-size:20px;
+	}
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+	nav ul>li {
+		margin:1%;
+		width:30.5%;
+		height:120px;
+		font-size:20px;
+	}
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	nav ul>li {
+		margin:1%;
+		width:30.5%;
+		height:120px;
+		font-size:20px;
+	}
+	.big {
+		font-size:70px;
+	}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+	nav ul>li {
+		margin:1%;
+		width:30.5%;
+		height:120px;
+		font-size:20px;
+	}
+	.big {
+		font-size:70px;
+	}
+}
+
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+	nav ul>li {
+		margin:1%;
+		width:30.5%;
+		height:120px;
+	}
+	.big {
+		font-size:70px;
+	}
+}
+ 
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+	nav ul>li {
+		margin:0.6%;
+		width:48.5%;
+		height:120px;
+		font-size:20px;
+	}
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+	nav ul>li {
+		margin:0.6%;
+		width:48.5%;
+		height:120px;
+		font-size:20px;
+	}
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+	nav ul>li {
+		margin:0.6%;
+		width:48.5%;
+		height:120px;
+		font-size:20px;
+	}
+}
+
+* {
+  /* So 100% means 100% */
+  box-sizing: border-box;
+}
+body {
+	font-family:Arial;
+	margin:0px;
+	color:#454546;
+}
+[data-role="header"]{
+	background:#FFF;
+	z-index:3;
+	padding:1px;
+	border-bottom:2px solid #C3D84B;
+}
+[data-role="page"]{
+	margin:auto!important;
+	width:100%!important;
+	position:absolute!important;
+	z-index:1;
+}
+#pagina {
+	min-height:100%;
+	width:100%;
+	position:absolute;
+	z-index:2;
+	color:#454546;
+	display:none;
+	top:60px;
+	padding:10px;
+	overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.container {
+	width:90%;
+	margin:auto;
+	
+}
+nav {
+	width:100%;
+}
+nav ul, nav ul>li {
+	display:inline;
+}
+[data-accion="open-page"], [data-accion="open-link"] {
+	color:#61C9D4;
+	cursor:pointer;
+	vertical-align:middle;
+	padding:10px;
+	/*background:rgba(255,255,255,0.6);
+	border:1px solid rgba(0,0,0,0.4);
+	box-shadow:1px 1px 7px rgba(0,0,0,0.3);*/
+	text-align:center;
+}
+[data-accion="open-page"] >a, [data-accion="open-link"] >a {
+	color:white;
+	font-weight:bold;
+	text-transform: uppercase;
+	text-decoration:none;
+}
+.clear {
+	clear:both;
+}
+.back-to-menu {
+	width:35px;
+	float:left;
+	color:#333;
+	font-size:33px;
+	padding:12px;
+	cursor:pointer;
+	margin-top:-59px;
+}
+.back-to-menu i {
+	display:none;
+}
+.curso {
+	margin-left:10px;
+	text-decoration:none!important;
+	text-shadow:none!important;
+	padding:3px;
+	border:1px solid #CECECE;
+	color:#C2D74A!important;
+	font-size:30px;
+}
+.button-update {
+	width:35px;
+	float:right;
+	color:#333;
+	font-size:33px;
+	padding:12px;
+	cursor:pointer;
+	margin-right:26px;
+	margin-top:-59px;
+}
+.button-update i {
+	display:none;
+}

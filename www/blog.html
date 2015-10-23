@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="css/FeedEk.css"> 
+<script type="text/javascript" src="js/FeedEk.js"></script>
+<script type="text/javascript">
+	jq('#divRss').FeedEk({
+		FeedUrl: 'http://www.asociacioncraneosacral.com/feed/',
+		MaxCount: 5,
+		ShowDesc: true,
+		ShowPubDate: false,
+		DescCharacterLimit: 500
+	});
+</script>
+
+<div class="container">
+	<div id="divRss"></div>
+</div>

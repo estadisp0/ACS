@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="css/filo_style.css" type="text/css" />
+<script src="js/filo.js" type="text/javascript"></script>
+<script type="text/javascript">
+	jq(function() {
+
+		var options = {
+			template:4,
+			maxCount:'all', 
+			excluded: ['Cover Photos','Profile Pictures','Timeline Photos', 'Untitled Album'],
+			container: '.container-photos',
+			//define load function and show only first "n" thumbs
+			load: function () {					
+				var thumbCount = 6;
+				jq('.filo .thumbs .thumb:lt('+3+')').show();
+			}
+		}
+		
+		jq.filo("120120798061204", options);
+	});
+</script>
+<div class="container-photos">
+</div>

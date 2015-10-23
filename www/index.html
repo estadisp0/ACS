@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>AppPobi</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css"> 
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css"> 
+		<script language="javascript" src="js/jquery.js"></script>
+		<script>
+			//En algunas ocaciones, jQuery petaba sin previo aviso, con esto se arregla el fallo y cambiamos el $ por jq, evitando conflictos
+			var jq = jQuery.noConflict();
+		</script>
+		<script language="javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script language="javascript" src="js/script.js"></script>	
+		
+	</head>
+	<body onload="onLoad()">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<div align="center"><img src="img/logo.jpg" style="max-width:170px" /></div>
+			<div class="back-to-menu"><i class="icon-undo"></i></div>
+			<div class="button-update"><i class="icon-spinner"></i></div>	
+		</div>
+		<div data-role="page" id="menu">
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<div data-accion="open-page" data-id="bienvenido"><i class="icon-home big"></i><br>Bienvenido</div>
+					<div data-accion="open-page" data-id="mapa"><i class="icon-map big"></i><br>Mapa</div>
+					<div data-accion="open-link" data-href="tel:+34-638-604-948"><i class="icon-phone big"></i><br>Ll&aacute;manos</div>
+					<div data-accion="open-page" data-id="blog"><i class="icon-pencil big"></i><br>Blog</div>
+					<div data-accion="open-page" data-id="fotos"><i class="icon-images big"></i><br>Fotos</div>
+					<div data-accion="open-page" data-id="facebook"><i class="icon-facebook big"></i><br>Facebook</div>
+					<div data-accion="open-page" data-id="localizador"><i class="icon-search big"></i><br>Lozalizador Terapeutas</div>
+					<div data-accion="open-link" data-href="https://docs.google.com/viewer?url=http://s.como.com/mobile/e5/37/e59142b2-f537-40ce-9ebb-c4840a124281/pdf/14ec0e95-245b-4626-bec1-d5338639fe6f.pdf&embedded=true"><i class="icon-file-pdf big"></i><br>PDF Listado de terapeutas</div>
+				</div>
+				<div class="ui-block-b">					
+					<div data-accion="open-link" data-href="mailto:info@asociacioncraneosacral.com"><i class="icon-bubbles big"></i><br>Contacto</div>					
+					<div data-accion="open-page" data-id="cursos"><i class="icon-book big"></i><br>Cursos</div>					
+					<div data-accion="open-page" data-id="escuelas_reconocidas"><i class="icon-library big"></i><br>Escuelas Reconocidas</div>					
+					<div data-accion="open-page" data-id="videos"><i class="icon-youtube big"></i><br>Videos</div>					
+					<div data-accion="open-page" data-id="asociarse"><i class="icon-accessibility big"></i><br>Asociarse</div>					
+					<div data-accion="open-link" data-href="https://docs.google.com/viewer?url=http://s.como.com/mobile/e5/37/e59142b2-f537-40ce-9ebb-c4840a124281/pdf/572ae579-c9c1-4986-b2df-0f8eba2239d7.pdf&embedded=true"><i class="icon-file-pdf big"></i><br>PDF Terapeutas sociales</div>
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>

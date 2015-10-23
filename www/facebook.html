@@ -1,0 +1,49 @@
+<link rel="stylesheet" type="text/css" href="css/jquery.socialfeed.css.css"> 
+<link rel="stylesheet" type="text/css" href="css/facebook_feed.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<section class="feed">
+	<div class="container">
+		<div class="social-feed-container">
+		</div>
+	</div>
+</section>
+<script src="bower_components/codebird-js/codebird.js"></script>
+<script src="bower_components/doT/doT.min.js"></script>
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="js/jquery.socialfeed.js"></script>
+<script>
+    jq(function(){
+		var updateFeed = function() {
+            jq('.social-feed-container').socialfeed({
+                    // FACEBOOK
+                    facebook:{
+                        accounts: ['@120120798061204','!120120798061204'],
+                        limit: 7,
+                        access_token: '294496207397455|0WhdIzuDnjt8vLh3X9IhM11q1Pk' // APP_ID|APP_SECRET
+                    },
+                    // GENERAL SETTINGS
+                    length:200,
+                    show_media:true,
+                    // Moderation function - if returns false, template will have class hidden
+                    moderation: function(content){
+                        return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
+                    },
+                    update_period: 5000,
+                    // When all the posts are collected and displayed - this function is evoked
+                    callback: function(){
+						var interval = setInterval(function(){
+							jq.mobile.loading('hide');
+							clearInterval(interval);
+						},1);  
+                        console.log('all posts are collected');
+                    }
+                });
+        };
+		
+		updateFeed();
+		jq('.button-update').click(function() {
+            updateFeed();
+        });
+				
+	});
+</script>

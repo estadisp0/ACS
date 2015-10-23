@@ -1,0 +1,16 @@
+
+<div align="center">
+<h1>Localizador</h1>	
+	<LABEL for="localidad">Localidad: </LABEL>
+              <INPUT type="text" id="localidad" />	  	
+	<input type="button" onclick="localizar()" value="Enviar">	
+</div>
+<script type="text/javascript">
+function localizar(){
+	var loc= document.getElementById('localidad').value;
+	window.location="http://www.asociacioncraneosacral.com/listado-terapeutas/?search_location="+loc;
+}
+</script>
+
+      
+    
